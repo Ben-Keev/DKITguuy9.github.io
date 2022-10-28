@@ -27,6 +27,12 @@
     
     /* Occupy full width of screen */
     width: 100%;
+
+    /* Prevent condensing at low zoom */
+    min-height: 108px;
+
+    /* Prevent expansion at high zoom */
+    max-height: 108px;
 }
 
 /* Target li tags within parent element of class nav */
@@ -62,17 +68,63 @@
 /* ---------------Backgrounds--------------- */
 /* The page will have two backgrounds layered on each other */
 
-.back1 {
+.backImg {
     /* ---Aesthetic--- */
     /* Link the image used in background */
     background-image: url("https://image.shutterstock.com/image-vector/simple-abstract-geometry-fluid-gradient-260nw-1982225861.jpg");
 
     /* ---Positioning--- */
+    /* This element must be 'explicity positioned' for its position to be recognised by children */
+    position: fixed;
+
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+
+    /* Move elemenet below navbar */
+    /* Ensures navbar doesn't obscure children */
+    margin-top: 108px;
+
     /* The background will cover the entire container */
     background-size: cover;
 
+    /* No need for the background to repeat */
+    background-repeat: no-repeat;
+
     /* The image will remain at its full height, at minimum */
-    min-height: 100%
+    /* min-height: 100%; */
+
+    /* Keep the background in the background */
+    z-index: -1;
+}
+
+.backImg .backFlex {
+    /* ---Aesthetic--- */
+    background-color: white;
+
+    /* ---Positioning--- */
+
+    /* Allow content to be modified relative to normal position */
+    position: relative;
+
+    /* Horizontally center the container */
+    margin: auto;
+    
+    /* Give it some space from the top */
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    /* 80% of the container (with explicitly defined position) */
+
+    min-width: 70%;
+    min-height: 80%;
+    max-width: 70%;
+    max-height: 80%;
+
+    /* ---Technical--- */
+    /* Create flex container */
+    display: flex
 }
 
 /* ---------------General Classes--------------- */
@@ -101,3 +153,13 @@ p, a, h1, h2, h3, h4, h5, h6 {
     /* Remove serifs for a more modern look */
     font-family: sans-serif;
 }
+
+/* Selector notes */
+
+/* > selects tags within an element */
+/* , selects multiple elements */
+/* : adds conditions as to when css is applied */
+/* :: does something */
+
+/* . selects by class */
+/* # selects by id */
