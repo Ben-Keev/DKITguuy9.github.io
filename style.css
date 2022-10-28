@@ -1,4 +1,4 @@
-/* ---NAV BAR CODE--- */
+/* ---------------NAV BAR CODE--------------- */
 
 .nav {
     /* ---Aesthetic--- */
@@ -13,6 +13,9 @@
 
     /* ---Positioning--- */
 
+    /* Make sure it's a block */
+    display: block;
+
     /* Padding will be included in element's width and height */
     box-sizing: border-box;
 
@@ -24,19 +27,31 @@
     
     /* Occupy full width of screen */
     width: 100%;
-
-    /* Remove gaps at top and left */
-    top: 0;
-    left: 0;
 }
 
 /* Target li tags within parent element of class nav */
 .nav li {
 
-    padding: 20px;
+    padding: 45px;
 
     /* Elements will render on horizontal plane while respecting vertical margins*/
     display: inline-block;
+}
+
+/* Target links within navbar */
+.nav li a {
+    /* Remove underline */
+    text-decoration: none;
+}
+
+/* Make links respond to hover */
+.nav li a:hover {
+
+}
+
+/* Highlight Currently Selected Page */
+.currentPage {
+
 }
 
 /* L'histoire logo */
@@ -44,7 +59,23 @@
     float: left;
 }
 
-/* ---General Classes--- */
+/* ---------------Backgrounds--------------- */
+/* The page will have two backgrounds layered on each other */
+
+.back1 {
+    /* ---Aesthetic--- */
+    /* Link the image used in background */
+    background-image: url("https://image.shutterstock.com/image-vector/simple-abstract-geometry-fluid-gradient-260nw-1982225861.jpg");
+
+    /* ---Positioning--- */
+    /* The background will cover the entire container */
+    background-size: cover;
+
+    /* The image will remain at its full height, at minimum */
+    min-height: 100%
+}
+
+/* ---------------General Classes--------------- */
 /* These classes are applicable to multiple elements, used to reduce repition */
 
 /* Override default margin/padding */
@@ -54,4 +85,19 @@
 
     /* Override default padding */
     padding: 0;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page */
+body, html {
+    /* Assigns a height to the body/html, so we can specify heights for other contents (background) */
+    height:100%;
+
+    /* Fix annoying white borders that tend to crop up everywhere */
+    margin: 0;
+}
+
+/* Set font family */
+p, a, h1, h2, h3, h4, h5, h6 {
+    /* Remove serifs for a more modern look */
+    font-family: sans-serif;
 }
