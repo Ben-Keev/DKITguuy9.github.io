@@ -1,0 +1,57 @@
+/* ---NAV BAR CODE--- */
+
+.nav {
+    /* ---Aesthetic--- */
+    /* Set navbar's colour */
+    background-color: pink;
+
+    /* Remove default bullet point */
+    list-style-type: none;
+
+    /* Elements will not leak */
+    overflow: hidden;
+
+    /* ---Positioning--- */
+
+    /* Padding will be included in element's width and height */
+    box-sizing: border-box;
+
+    /* Ensures nav stays at top of screen */
+    position: fixed;
+
+    /* Text stays to right of screen */
+    text-align: right;
+    
+    /* Occupy full width of screen */
+    width: 100%;
+
+    /* Remove gaps at top and left */
+    top: 0;
+    left: 0;
+}
+
+/* Target li tags within parent element of class nav */
+.nav li {
+
+    padding: 20px;
+
+    /* Elements will render on horizontal plane while respecting vertical margins*/
+    display: inline-block;
+}
+
+/* L'histoire logo */
+.logo {
+    float: left;
+}
+
+/* ---General Classes--- */
+/* These classes are applicable to multiple elements, used to reduce repition */
+
+/* Override default margin/padding */
+.posOverride {
+    /* Override default margin */
+    margin: 0;
+
+    /* Override default padding */
+    padding: 0;
+}
