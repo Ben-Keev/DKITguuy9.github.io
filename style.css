@@ -101,7 +101,11 @@
 
 .backImg .backFlex {
     /* ---Aesthetic--- */
+    
     background-color: white;
+
+    /* Rounded border */
+    border-radius: 50px;
 
     /* ---Positioning--- */
 
@@ -123,8 +127,31 @@
     max-height: 80%;
 
     /* ---Technical--- */
+    /* Deal with overflow */
+    overflow: auto;
+
     /* Create flex container */
-    display: flex
+    display: flex;
+
+    /* Allow elements to wrap on zoom */
+    flex-wrap: wrap;
+
+    /* Center content */
+    justify-content: center;
+    align-content: space-around;
+
+    /* Spacing between flex children */
+    gap: 200px;
+
+}
+
+/* ---backFlex container objects--- */
+.coverImg {
+
+}
+
+.introText {
+
 }
 
 /* ---------------General Classes--------------- */
