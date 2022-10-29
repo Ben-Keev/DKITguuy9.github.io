@@ -131,18 +131,35 @@
     overflow: auto;
 
     /* Create flex container */
-    display: flex;
+    /* display: flex; */
 
     /* Allow elements to wrap on zoom */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* Center content */
     justify-content: center;
     align-content: space-around;
 
-    /* Spacing between flex children */
-    gap: 200px;
 
+
+    /* Spacing between grid children */
+    gap: 40px;
+
+    /* Set out the grid */
+    display: grid;
+
+    /* Two columns of equal horizontal size */
+    grid-template-columns: 5% 40% 40% 5%;
+
+    /* Two Rows of specified vertical size */
+    /* grid-template-rows: 50% 50%; */
+}
+
+.backFlex > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
 }
 
 /* ---backFlex container objects--- */
@@ -151,6 +168,10 @@
 }
 
 .introText {
+
+}
+
+.dividerText {
 
 }
 
