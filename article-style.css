@@ -1,0 +1,61 @@
+
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+.articleImg {
+
+    /* ---Aesthetic--- */
+
+    /* Image to display */
+    background-image: url("https://c0.wallpaperflare.com/preview/91/810/349/black-crt-tv.jpg");
+
+    /* ---Positioning--- */
+
+    /* Spacing for Navbar */
+    margin-top: 108px;
+
+    /* Keep image at consistent size */
+    min-height: 60%;
+
+    /* Therefore container may use absolute */
+    position: relative;
+}
+
+
+
+.articleImg .overlayText {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); */
+
+    /* ---Aesthetic--- */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+    /* ---Positioning--- */
+    /* W3 Schools Center Vertically - Using position & transform */
+    /* https://www.w3schools.com/css/css_align.asp */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------General Classes--------------- */
+/* These classes are applicable to multiple elements, used to reduce repition */
+
+.parrallax {    
+    /* Create the parallax scrolling effect */
+
+    /* No scrolling with page */
+    background-attachment: fixed;
+
+    /* Keep centered */
+    background-position: center;
+
+    /* No repeating in tiles */
+    background-repeat: no-repeat;
+
+    /* Cover the viewport */
+    background-size: cover;
+}

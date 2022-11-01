@@ -33,6 +33,15 @@
 
     /* Prevent expansion at high zoom */
     max-height: 108px;
+
+    /* Ensure that in all pages, the navbar stays at top of screen */
+    top:0;
+
+    /* Drop shadow effect */
+    box-shadow: -2px 2px 20px 0.25px rgb(90, 90, 90);
+
+    /* Navbar always stays on top */
+    z-index: 256;
 }
 
 /* Target li tags within parent element of class nav */
@@ -102,7 +111,9 @@
 .backImg .backFlex {
     /* ---Aesthetic--- */
     
-    background-color: white;
+    /* Opacity and colour */
+    /* Use RGB so image opacity is not affected */
+    background-color: rgba(255, 255, 255, 0.8);
 
     /* Rounded border */
     border-radius: 50px;
@@ -120,7 +131,6 @@
     margin-bottom: 5%;
 
     /* 80% of the container (with explicitly defined position) */
-
     min-width: 70%;
     min-height: 80%;
     max-width: 70%;
@@ -140,8 +150,6 @@
     justify-content: center;
     align-content: space-around;
 
-
-
     /* Spacing between grid children */
     gap: 40px;
 
@@ -156,7 +164,7 @@
 }
 
 .backFlex > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 30px;
     text-align: center;
