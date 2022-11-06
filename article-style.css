@@ -198,6 +198,25 @@
     margin-bottom: 0;
 }
 
+/* Grid layout for introduction content */
+.gridIntro {
+    /* Set display to grid */
+    display: grid;
+
+    /* Two columns of the same width */
+    grid-template-columns: 65% 30%;
+    grid-template-rows: auto auto;
+
+    /* Spacing between columns */
+    justify-content: space-evenly;
+}
+
+/* Child elements of grid */
+.gridIntro > div {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
 #chapters {
     background-color: #D4F1F4;
     border-radius: 30px;
@@ -207,16 +226,31 @@
     box-sizing: border-box;
 }
 
-#chapters > h2 {
+#chapters > h2, #chapters > a {
     text-align: center;
+}
+
+/* https://stackoverflow.com/questions/55369205/centering-an-li-element-without-taking-bullet-point-into-account */
+#chapters > ul {
+    /* Adjust default padding from ul */
+    padding-left: 20px;
+}
+
+/* Styling of chapter select */
+#chapters > ul > li > a {
+    /* Remove underline */
+    text-decoration: none;
+}
+
+#chapters > ul > li{
+    /* Space out list items*/
+    padding-bottom: 15px;
 }
 
 #chapters > ul {
     /* Remove default bullet point */
     list-style-type: none;
 }
-
-    
 
 #introText {
     display:inline-block;
