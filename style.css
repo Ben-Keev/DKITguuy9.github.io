@@ -46,7 +46,6 @@
 
 /* Target li tags within parent element of class nav */
 .nav li {
-
     padding: 45px;
 
     /* Elements will render on horizontal plane while respecting vertical margins*/
@@ -230,6 +229,15 @@ body, html {
 p, a, h1, h2, h3, h4, h5, h6 {
     /* Remove serifs for a more modern look */
     font-family: sans-serif;
+}
+
+/* Modifies every icon */
+i {
+    /* Icons will appear level with text */
+    vertical-align: sub;
+
+    /* Icons will be spaced from the text to the right by 5px */
+    padding-right: 5px;
 }
 
 /* Selector notes */
