@@ -2,6 +2,8 @@
 /* https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 /* Parallax Background */
+
+
 .articleImg {
 
     /* ---Aesthetic--- */
@@ -9,8 +11,9 @@
     /* Darken the image a bit */
     background-color: rgb(0, 0, 0, 0.8);
 
-    /* Image to display */
-    background-image: url("https://c0.wallpaperflare.com/preview/91/810/349/black-crt-tv.jpg");
+    /* Image to display, with coloured overlay */
+    /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
+    background-image: linear-gradient(to top, #05445Eba, #75E6DAcc), url("https://c0.wallpaperflare.com/preview/91/810/349/black-crt-tv.jpg");
 
     /* ---Positioning--- */
 
@@ -54,7 +57,9 @@
     background-image: url(assets/background-left.png), url(assets/background-right.png), url(assets/paper-texture.jpg);
     background-position: left, right, left;
     background-repeat: repeat-y, repeat-y, repeat;
-    background-size: 25%, 25%, 25%;
+    background-size: 20%, 20%, cover;
+
+    padding-top: 50px;
 
 }
 
@@ -139,9 +144,9 @@
 
 /* The first section needs to be distanced from handlebar */
 /* We must also ensure backgrounds still functions */
-section:first-of-type {
+/* section:first-of-type {
     padding-top: 50px;
-}
+} */
 
 .boxTextContent {
     /* ---Aesthetic--- */
@@ -155,7 +160,6 @@ section:first-of-type {
     border-radius: 10px;
 
     /* ---Positioning--- */
-    position: relative;
 
     /* Limit size */
     max-width: 45%;
@@ -192,6 +196,30 @@ section:first-of-type {
 /* The last paragraph doesn't get a margin */
 .boxTextContent p:last-of-type {
     margin-bottom: 0;
+}
+
+#chapters {
+    background-color: #D4F1F4;
+    border-radius: 30px;
+    padding: 5px;
+
+    float:right;
+    box-sizing: border-box;
+}
+
+#chapters > h2 {
+    text-align: center;
+}
+
+#chapters > ul {
+    /* Remove default bullet point */
+    list-style-type: none;
+}
+
+    
+
+#introText {
+    display:inline-block;
 }
 
 /* ---------------General Classes--------------- */
