@@ -49,11 +49,12 @@
     /* https://www.w3schools.com/css/css3_backgrounds.asp */
 
     /* Two backgrounds will cover each end of the webpage */
+    /* Another Background will be layered behind these */
     /* Chosen Images (These are just inversions of each other */
-    background-image: url(assets/background-left.png), url(assets/background-right.png);
-    background-position: left, right;
-    background-repeat: repeat-y, repeat-y;
-    background-size: 25%, 25%;
+    background-image: url(assets/background-left.png), url(assets/background-right.png), url(assets/paper-texture.jpg);
+    background-position: left, right, left;
+    background-repeat: repeat-y, repeat-y, repeat;
+    background-size: 25%, 25%, 25%;
 
 }
 

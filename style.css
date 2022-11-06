@@ -198,13 +198,21 @@
 
 /* Read More Button */
 button {
+    /* ---Aesthetic--- */
     background-color: #189AB4;
+
+    /* Remove Default border */
     border: none;
+    /* Round Border */
     border-radius: 30px;
+
+    /* Add spacing between text and background */
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
+
+    /* Text formatting */
     color: white;
     font-weight: bold;
     font-size: 20px;
