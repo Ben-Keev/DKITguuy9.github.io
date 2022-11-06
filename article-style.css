@@ -1,9 +1,7 @@
 
 /* https://www.w3schools.com/howto/howto_css_parallax.asp */
 
-/* Parallax Background */
-
-
+/* ---------------Parallax Background--------------- */
 .articleImg {
 
     /* ---Aesthetic--- */
@@ -47,21 +45,8 @@
     transform: translate(-50%, -50%);
 }
 
-/* Background which covers entire height of page */
-.grain {
-    /* https://www.w3schools.com/css/css3_backgrounds.asp */
+/* ---------------Handle Bar, Nav Adjustments--------------- */
 
-    /* Two backgrounds will cover each end of the webpage */
-    /* Another Background will be layered behind these */
-    /* Chosen Images (These are just inversions of each other */
-    background-image: url(assets/background-left.png), url(assets/background-right.png), url(assets/paper-texture.jpg);
-    background-position: left, right, left;
-    background-repeat: repeat-y, repeat-y, repeat;
-    background-size: 20%, 20%, cover;
-
-    padding-top: 50px;
-
-}
 
 /* Make the drop shadow from nav less intensewhen this stylsheet is loaded second */
 .nav {
@@ -148,6 +133,8 @@
     padding-top: 50px;
 } */
 
+/* ---------------Article Text boxes--------------- */
+
 .boxTextContent {
     /* ---Aesthetic--- */
     /* Opacity and colour */
@@ -179,6 +166,9 @@
     margin-top: 0;
 }
 
+/* ---------------Article Text boxes--------------- */
+/* ---Text Formatting--- */
+
 /* Headings within article text */
 .boxTextContent h1 {
     /* Bigger than h1 */
@@ -198,6 +188,37 @@
     margin-bottom: 0;
 }
 
+/* ---------------Article Text boxes--------------- */
+/* ---Image Formatting--- */
+.boxImg {
+    /* ---Positioning--- */
+    
+    /* Image will scale to boxImgContain width */
+    max-width:100%;
+
+}
+
+.boxImgContain {
+    /* ---Aesthetic--- */
+    
+
+    /* ---Positioning--- */
+    /* Container will scale to boxTextContent width */
+    max-width: 80%;
+    /* Height will scale to match width */
+    max-height: auto;
+
+    /* Center Image https://www.w3schools.com/howto/howto_css_image_center.asp */
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px
+    
+}
+
+/* ---------------Article Text boxes--------------- */
+/* ---Intro box--- */
+
 /* Grid layout for introduction content */
 .gridIntro {
     /* Set display to grid */
@@ -216,6 +237,7 @@
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
+/* ---Chapter Selection--- */
 
 #chapters {
     background-color: #D4F1F4;
@@ -252,8 +274,23 @@
     list-style-type: none;
 }
 
-#introText {
-    display:inline-block;
+
+/* ---Article Background--- */
+
+/* Background which covers entire height of content */
+.grain {
+    /* https://www.w3schools.com/css/css3_backgrounds.asp */
+
+    /* Two backgrounds will cover each end of the webpage */
+    /* Another Background will be layered behind these */
+    /* Chosen Images (These are just inversions of each other */
+    background-image: url(assets/background-left.png), url(assets/background-right.png), url(assets/paper-texture.jpg);
+    background-position: left, right, left;
+    background-repeat: repeat-y, repeat-y, repeat;
+    background-size: 20%, 20%, cover;
+
+    padding-top: 50px;
+
 }
 
 /* ---------------General Classes--------------- */
