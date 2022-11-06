@@ -80,6 +80,34 @@
     max-height: 88px;
 }
 
+/* ---------------FOOTER CODE--------------- */
+
+footer {
+    /* ---Aesthetic--- */
+    /* Set navbar's colour */
+    background-color: #05445E;
+
+    /* Remove default bullet point */
+    list-style-type: none;
+
+    /* Elements will not leak */
+    overflow: hidden;
+
+    /* Drop shadow effect */
+    box-shadow: -2px 2px 20px 0.25px rgb(90, 90, 90);
+
+    /* ---Positioning--- */
+
+    /* Occupy full width of screen */
+    width: 100%;
+
+    /* Prevent condensing at low zoom */
+    min-height: 108px;
+
+    /* Prevent expansion at high zoom */
+    max-height: 108px;
+}
+
 /* ---------------Backgrounds--------------- */
 /* The page will have two backgrounds layered on each other */
 
@@ -196,7 +224,7 @@
 
 }
 
-/* Read More Button */
+/* Buttons */
 button {
     /* ---Aesthetic--- */
     background-color: #189AB4;
@@ -216,6 +244,14 @@ button {
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+
+footer > button {
+    /* ---Positioning--- */
+    /* Center */
+    display:block;
+    margin: auto;
+    margin-top: 30px;
 }
 
 #buttonLeft, #buttonRight {
