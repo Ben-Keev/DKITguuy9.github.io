@@ -3,7 +3,7 @@
 .nav {
     /* ---Aesthetic--- */
     /* Set navbar's colour */
-    background-color: pink;
+    background-color: white;
 
     /* Remove default bullet point */
     list-style-type: none;
@@ -71,7 +71,14 @@
 
 /* L'histoire logo */
 .logo {
+
+    /* Positioning */
+    /* Keep to left of nav links */
     float: left;
+
+    /* Center the logo */
+    padding: 10px 5px;
+    max-height: 88px;
 }
 
 /* ---------------Backgrounds--------------- */
@@ -147,7 +154,11 @@
     /* flex-wrap: wrap; */
 
     /* Center content */
+
+    /* Horizontally centered */
     justify-content: center;
+
+    /* Vertically centered */
     align-content: space-around;
 
     /* Spacing between grid children */
@@ -168,6 +179,9 @@
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 30px;
     text-align: center;
+
+    /* Vertically and horizontally centres grid items */
+    margin: auto;
 }
 
 /* ---backFlex container objects--- */
@@ -181,6 +195,14 @@
 
 .dividerText {
 
+}
+
+#buttonLeft, #buttonRight {
+
+    margin: auto;
+
+    /* Buttons will scale to occupy size of grid */
+    max-width:100%;
 }
 
 /* ---------------General Classes--------------- */
