@@ -178,7 +178,7 @@
 }
 
 /* Paragraphs within article text */
-.boxTextContent p {
+.boxTextContent > div > p {
     /* Bigger text */
     font-size: large;
 }
@@ -191,16 +191,43 @@
 /* ---------------Article Text boxes--------------- */
 /* ---Image Formatting--- */
 .boxImg {
+
+    /* ---Aesthetic--- */
+    border: 1px solid #189AB4;
+
     /* ---Positioning--- */
     
     /* Image will scale to boxImgContain width */
     max-width:100%;
 
+    margin-top: 2px;
+}
+
+.boxImgHeader {
+    font-size:20px;
+    font-weight: bold;
+    color: #05445E;
+    padding-top: 0;
+}
+
+.boxImgFooter {
+    margin: 0;
+    padding: 0;
+    color:#05445E;
+    font-size: small;
+}
+
+.figure {
+    vertical-align: Super;
+    font-size: small;
+    color:#2d2d2d;
 }
 
 .boxImgContain {
     /* ---Aesthetic--- */
-    
+    background-color: #D4F1F4;
+    box-shadow: 3px 3px 10px 0.25px rgb(90, 90, 90, 0.3);
+    border: 1px solid #05445E;
 
     /* ---Positioning--- */
     /* Container will scale to boxTextContent width */
@@ -208,12 +235,16 @@
     /* Height will scale to match width */
     max-height: auto;
 
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
     /* Center Image https://www.w3schools.com/howto/howto_css_image_center.asp */
     display:block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px
-    
 }
 
 /* ---------------Article Text boxes--------------- */
