@@ -4,9 +4,6 @@
 
     /* ---Aesthetic--- */
 
-    /* Darken the image a bit */
-    background-color: rgb(0, 0, 0, 0.8);
-
     /* Image to display, with coloured overlay */
     /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
     background-image: url("/assets/skyscraper-blue.png");
@@ -17,16 +14,23 @@
     margin-top: 108px;
 
     /* Keep image at consistent size */
-    min-height: 89%;
+    min-height: 100%;
 
     /* Therefore container may use absolute */
     position: relative;
 }
 
+/* Height must be defined for parralax background to work */
+section#dictEntry {
+    height: 89%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* ---------------Dictionary Entry--------------- */
 /* Dictionary Entry Background */
 .dictBack {
     /* ---Aesthetic--- */
-
     /* Use RGB so image opacity is not affected */
     background-color: rgba(255, 255, 255, 0.98);
 
@@ -41,6 +45,9 @@
     padding-right: 40px;
     padding-bottom: 30px;
 
+    /* When zooming in, hide overflow */
+    overflow: hidden;
+
     /* ---Positioning--- */
     /* Center Box */
     position: absolute;
@@ -54,40 +61,68 @@
 }
 
 /* Dictionary Text */
+/* Target h1 in dictBack */
 .dictBack > h1 {
+    /* ---Aesthetic--- */
+    /* Add serifs for a formal look */
+    font-family: serif;
+
+    /* ---Positoning--- */
     margin: 0;
     font-size: 70px;
-    font-family: serif;
 }
 
+/* Target h2 in dictBack */
 .dictBack > h2 {
+    /* ---Aesthetic--- */
+    /* Add serifs for a formal look */
+    font-family: serif;
+
+    /* More muted colour */
+    color: gray;
+    
+    /* ---Positoning--- */
     margin: 0;
     font-size: 50px;
-    font-family: serif;
-    color: gray;
     margin-bottom: 60px
 }
 
+/* Target li tags in ordered lists */
 .dictBack > ol > li {
+    /* ---Positioning--- */
     margin-top: 60px;
     font-size: 50px;
 }
 
+/* Target blockquotes in Dictback */
 .dictBack > blockquote {
+
+    /* ---Aesthetic--- */
+
+    /* Add a line covering the vertical height of the text for aesthetic */
+    border-left: 2px solid #189AB4;
+    /* Distance border from line */
+    padding-left: 30px;
+    /* Back to being less formal */
+    font-family: sans-serif;
+    
+
+    /* ---Positioning--- */
     margin-top: 40px;
     font-size: 25px;
-    padding-left: 30px;
-    border-left: 2px solid #189AB4;
-    font-family: sans-serif;
+
 }
 
+/* Trarget paragraphs in DictBack */
 .dictBack > p {
+    /* ---Positioning */
     margin-top: 0;
     font-size: 25px;
     padding-left: 30px;
     text-align: right;
 }
 
+/* Target Icons that are a child of headings in dictback */
 .dictBack > h1 > i {
     /* Icons will appear level with text */
     background-color: #189AB4;
@@ -96,9 +131,42 @@
     color: white;
 }
 
+/* Increase size of icon using Google font's spec */
+/* https://stackoverflow.com/questions/55395192/resizing-google-material-icons-font-size */
 .material-icons.md-68 { font-size: 68px; }
 
-/* Height must be defined for parralax background to work */
-section#dictEntry {
-    height: 100%;
+/* ---------------Citation Guide--------------- */
+
+/* Next Parralax Scroll Img */
+.citationImg {
+    /* ---Aesthetic--- */
+
+    /* Image to display, with coloured overlay */
+    /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
+
+    /* Use same colour twice to achieve darken effect */
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/professor.jpg");
+
+    /* ---Positioning--- */
+
+    /* Adjust background focus */
+    /* https://stackoverflow.com/questions/17722239/full-screen-background-with-cover-but-focus-on-a-part-of-the-image */
+
+    /* Adjust the color overlay by 0, adjust the image by -100px */
+    background-position-y: 0, -100px;
+    
+    /* Keep image at consistent size */
+    min-height:40%;
+
+    /* Therefore container may use absolute */
+    position: relative;
+}
+
+section#citation {
+    height: 40%
+}
+
+.parallax.citationImg {
+    /* No scrolling with page */
+    background-attachment: fixed;
 }

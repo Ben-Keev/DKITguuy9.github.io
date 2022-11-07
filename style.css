@@ -321,6 +321,26 @@ i {
     background-size: cover;
 }
 
+/* Parallax Background Text */
+.overlayText {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); */
+
+    /* ---Aesthetic--- */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+    /* ---Positioning--- */
+    /* W3 Schools Center Vertically - Using position & transform */
+    /* https://www.w3schools.com/css/css_align.asp */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Selector notes */
 
 /* > selects tags within an element */

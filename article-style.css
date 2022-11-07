@@ -19,30 +19,16 @@
     margin-top: 108px;
 
     /* Keep image at consistent size */
-    min-height: 60%;
+    min-height: 100%;
 
     /* Therefore container may use absolute */
     position: relative;
 }
 
-/* Parallax Background Text */
-.articleImg .overlayText {
-    /* background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8); */
-
-    /* ---Aesthetic--- */
-    color: white;
-    font-size: 30px;
-    text-align: center;
-
-    /* ---Positioning--- */
-    /* W3 Schools Center Vertically - Using position & transform */
-    /* https://www.w3schools.com/css/css_align.asp */
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Section containing parallax background. */
+section#splash {
+    /* How much of the screen the parallax will cover */
+    height: 60%;
 }
 
 /* ---------------Handle Bar, Nav Adjustments--------------- */
@@ -274,12 +260,18 @@
 .boxGall {
     display: grid;
     margin-top: 10px;
+
+    /* Three columns, automatically set to identical width */
     grid-template-columns: auto auto auto;
+
+    /* Content will be centered */
     justify-content: center;
-    column-gap: 100px;
+    /* USe VH units (affected by viewport) so gallery dynamically scales with zoom */
+    column-gap: 10vh;
 }
 
 .boxGall img {
+    /* Ensure image stays to a consistent size */
     min-height: 175px;
     max-height: 175px;
     background-color: white;
