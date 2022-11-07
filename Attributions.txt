@@ -2,3 +2,25 @@ Book by Liberus from <a href="https://thenounproject.com/browse/icons/term/book/
 
 Paper Texture (Public Domain)
 https://ambientcg.com/view?id=Paper003
+
+SkyScraper
+https://www.publicdomainpictures.net/en/free-download.php?image=skyscrapers&id=239356
+
+
+/* Grid layout for introduction content */
+.gridIntro {
+    /* Set display to grid */
+    display: grid;
+
+    /* Two columns of the same width */
+    grid-template-columns: 65% 30%;
+    grid-template-rows: auto auto;
+
+    /* Spacing between columns */
+    justify-content: space-evenly;
+}
+
+/* Child elements of grid */
+.gridIntro > div {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}

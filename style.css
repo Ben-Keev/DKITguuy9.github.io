@@ -298,6 +298,22 @@ i {
     padding-right: 5px;
 }
 
+.parrallax {    
+    /* Create the parallax scrolling effect */
+
+    /* No scrolling with page */
+    background-attachment: fixed;
+
+    /* Keep centered */
+    background-position: center;
+
+    /* No repeating in tiles */
+    background-repeat: no-repeat;
+
+    /* Cover the viewport */
+    background-size: cover;
+}
+
 /* Selector notes */
 
 /* > selects tags within an element */
