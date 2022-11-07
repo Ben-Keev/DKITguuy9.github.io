@@ -1,9 +1,7 @@
 /* ---------------Parallax Background--------------- */
 /* First Parralax Scroll Img */
 .openingImg {
-
     /* ---Aesthetic--- */
-
     /* Image to display, with coloured overlay */
     /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
     background-image: url("/assets/skyscraper-blue.png");
@@ -66,7 +64,7 @@ section#dictEntry {
     /* ---Aesthetic--- */
     /* Add serifs for a formal look */
     font-family: serif;
-
+    
     /* ---Positoning--- */
     margin: 0;
     font-size: 70px;
@@ -96,7 +94,6 @@ section#dictEntry {
 
 /* Target blockquotes in Dictback */
 .dictBack > blockquote {
-
     /* ---Aesthetic--- */
 
     /* Add a line covering the vertical height of the text for aesthetic */
@@ -105,12 +102,10 @@ section#dictEntry {
     padding-left: 30px;
     /* Back to being less formal */
     font-family: sans-serif;
-    
 
     /* ---Positioning--- */
     margin-top: 40px;
     font-size: 25px;
-
 }
 
 /* Trarget paragraphs in DictBack */
@@ -133,6 +128,7 @@ section#dictEntry {
 
 /* Increase size of icon using Google font's spec */
 /* https://stackoverflow.com/questions/55395192/resizing-google-material-icons-font-size */
+
 .material-icons.md-68 { font-size: 68px; }
 
 /* ---------------Citation Guide--------------- */
