@@ -20,6 +20,7 @@
 
 /* Height must be defined for parralax background to work */
 section#dictEntry {
+    /* ---Positioning--- */
     height: 89%;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -64,7 +65,7 @@ section#dictEntry {
     /* ---Aesthetic--- */
     /* Add serifs for a formal look */
     font-family: serif;
-    
+
     /* ---Positoning--- */
     margin: 0;
     font-size: 70px;
@@ -95,7 +96,6 @@ section#dictEntry {
 /* Target blockquotes in Dictback */
 .dictBack > blockquote {
     /* ---Aesthetic--- */
-
     /* Add a line covering the vertical height of the text for aesthetic */
     border-left: 2px solid #189AB4;
     /* Distance border from line */
@@ -110,7 +110,7 @@ section#dictEntry {
 
 /* Trarget paragraphs in DictBack */
 .dictBack > p {
-    /* ---Positioning */
+    /* ---Positioning--- */
     margin-top: 0;
     font-size: 25px;
     padding-left: 30px;
@@ -119,11 +119,15 @@ section#dictEntry {
 
 /* Target Icons that are a child of headings in dictback */
 .dictBack > h1 > i {
+    /* ---Aesthetic--- */
     /* Icons will appear level with text */
     background-color: #189AB4;
-    padding: 10px;
+
     border-radius: 50px;
     color: white;
+
+    /* ---Positioning--- */
+    padding: 10px;
 }
 
 /* Increase size of icon using Google font's spec */
@@ -136,7 +140,6 @@ section#dictEntry {
 /* Next Parralax Scroll Img */
 .citationImg {
     /* ---Aesthetic--- */
-
     /* Image to display, with coloured overlay */
     /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
 
@@ -144,7 +147,6 @@ section#dictEntry {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/professor.jpg");
 
     /* ---Positioning--- */
-
     /* Adjust background focus */
     /* https://stackoverflow.com/questions/17722239/full-screen-background-with-cover-but-focus-on-a-part-of-the-image */
 
@@ -157,11 +159,6 @@ section#dictEntry {
     /* Therefore container may use absolute */
     position: relative;
 }
-
-/* .citationImg.parallax {
-    /* No scrolling with page */
-    /* background-attachment: scroll; */
-/* } */
 
 .citationImgContain {
     height:25vh
