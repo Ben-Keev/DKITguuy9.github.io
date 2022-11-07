@@ -9,7 +9,7 @@
 
     /* Image to display, with coloured overlay */
     /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
-    background-image: url("/assets/skyscraper-default.jpg");
+    background-image: url("/assets/skyscraper-blue.png");
 
     /* ---Positioning--- */
 
@@ -39,7 +39,7 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 
     /* ---Positioning--- */
     /* Center Box */
@@ -71,6 +71,21 @@
 .dictBack > ol > li {
     margin-top: 60px;
     font-size: 50px;
+}
+
+.dictBack > blockquote {
+    margin-top: 40px;
+    font-size: 25px;
+    padding-left: 30px;
+    border-left: 2px solid #189AB4;
+    font-family: sans-serif;
+}
+
+.dictBack > p {
+    margin-top: 0;
+    font-size: 25px;
+    padding-left: 30px;
+    text-align: right;
 }
 
 .dictBack > h1 > i {
