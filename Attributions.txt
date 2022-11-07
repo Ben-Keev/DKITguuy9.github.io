@@ -6,6 +6,9 @@ https://ambientcg.com/view?id=Paper003
 SkyScraper
 https://www.publicdomainpictures.net/en/free-download.php?image=skyscrapers&id=239356
 
+Blue Background
+https://www.publicdomainpictures.net/en/view-image.php?image=1578&picture=blue-background
+
 
 /* Grid layout for introduction content */
 .gridIntro {
