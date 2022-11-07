@@ -11,7 +11,7 @@
 
     /* Image to display, with coloured overlay */
     /* https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css */
-    background-image: linear-gradient(to top, #05445Eba, #75E6DAcc), url("https://c0.wallpaperflare.com/preview/91/810/349/black-crt-tv.jpg");
+    background-image: linear-gradient(to top, #05445Eba, #75E6DAcc), url("assets/black-crt-tv.jpg");
 
     /* ---Positioning--- */
 

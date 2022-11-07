@@ -71,12 +71,12 @@
 /* L'histoire logo */
 .logo {
 
-    /* Positioning */
+    /* ---Positioning--- */
     /* Keep to left of nav links */
     float: left;
 
     /* Center the logo */
-    padding: 10px 5px;
+    padding: 10px 20px;
     max-height: 88px;
 }
 
@@ -114,7 +114,7 @@ footer {
 .backImg {
     /* ---Aesthetic--- */
     /* Link the image used in background */
-    background-image: url("https://image.shutterstock.com/image-vector/simple-abstract-geometry-fluid-gradient-260nw-1982225861.jpg");
+    background-image: url("assets/blue-background.jpg");
 
     /* ---Positioning--- */
     /* This element must be 'explicity positioned' for its position to be recognised by children */
@@ -213,6 +213,13 @@ footer {
 
 /* ---backFlex container objects--- */
 .coverImg {
+    /* Aesthetic */
+    /* Drop shadow effect */
+    box-shadow: -2px 2px 20px 0.25px rgb(90, 90, 90);
+
+    /* ---Positioning--- */
+    max-width: 512px;
+    max-height: 512px;
 
 }
 

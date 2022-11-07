@@ -97,3 +97,8 @@
 }
 
 .material-icons.md-68 { font-size: 68px; }
+
+/* Height must be defined for parralax background to work */
+section#dictEntry {
+    height: 100%;
+}
