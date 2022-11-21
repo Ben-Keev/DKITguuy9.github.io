@@ -135,9 +135,6 @@ footer {
 
     /* The image will remain at its full height, at minimum */
     /* min-height: 100%; */
-
-    /* Keep the background in the background */
-    z-index: -1;
 }
 
 .backImg .backFlex {
