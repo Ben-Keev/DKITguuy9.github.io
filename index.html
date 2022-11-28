@@ -15,6 +15,8 @@
     <!-- https://fonts.google.com/icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <script src="home-script.js"></script>
+
 </head>
 <body>
     
@@ -46,17 +48,17 @@
 
             <!-- Text advertising featured article -->
             <div class="introText">
-                <h1>Featured Article</h1>
+                <h1 id="cycleHeading">Featured Article</h1>
                 <hr class="dividerText">
-                <h2>Origins of Age Ratings</h2>
-                <p style="font-size: 15px">Ever wonder where PEGI and the ESRB come from? Or why you have to be 18 years old to play Grand Theft Auto?</p>
+                <h2 id="cycleSub">Origins of Age Ratings</h2>
+                <p id="cycleP" style="font-size: 15px">Ever wonder where PEGI and the ESRB come from? Or why you have to be 18 years old to play Grand Theft Auto?</p>
                 <p>Find out all about it.</p>
-                <button onClick="location.href='articles/censorship.html'">Read more</button></a>
+                <button id="cycleLink" onClick="location.href='articles/censorship.html'">Read more</button></a>
             </div>
 
             <!-- Button for navigating right, Javascript needed -->
             <div>
-                <img src="/assets/button-right.png" alt="Right" id="buttonRight">
+                <img onClick="cycle(1)" src="/assets/button-right.png" alt="Right" id="buttonRight">
             </div>
 
         </div>
