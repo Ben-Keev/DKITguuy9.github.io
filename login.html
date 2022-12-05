@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Title as it appears in tab -->
+    <title>L'histoire</title>
+
+    <!-- Load stylesheet externally for greater flexibility -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="login-style.css">
+
+    <!-- Google Icons https://www.w3schools.com/icons/google_icons_intro.asp -->
+    <!-- https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="home-script.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav posOverride">
+        <ul class="posOverride">
+            <img src="assets/l'histoire.png" alt="L'histoire" draggable="false" class="logo">
+            <li><a href="index.html" class="currentPage">Home</a></li>
+            <li><a href="/articles/censorship.html">Articles</a></li>
+            <li><a href="info.html">More Info</a></li>
+        </ul>
+    </div>
+
+    <!-- Overall background -->
+    <div class="backImg">
+        
+        <!-- Grid container -->
+        <div class="backLogin">
+
+            <h1>Welcome!</h1>
+            <hr>
+            <p>We're so glad to have you!</p>
+
+            <!-- This action ensures we stay on the same page after hitting submit -->
+            <form action="#">
+
+            <label for="username">Name</label>
+            <input id="username" type="text"
+            placeholder="Enter a username" 
+            pattern="[A-Za-z0-9]{0,8}" 
+            title="Cannot be more than 8 characters long. Cannot contain special characters."
+            required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email"
+            placeholder="Enter a valid email address"
+            title="Must be a valid email."
+            required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password"
+            placeholder="Enter a strong password"
+            pattern="(?=.*\d).{8,}" 
+            title="Must contain 8 or more characters and at least 1 number"
+            required>
+
+            <!-- Verification through JavaScript -->
+            <label for="msg">Leave a comment.</label>
+            <textarea name="msg" id="" cols="500" rows="4"
+            title="Cannot be more than 100 characters long"></textarea>
+
+            <!-- Verification through JavaScript -->
+            <!-- The 'max' attribute will be created by JavaScript -->
+            <label for="birth">Birthday</label>
+            <input id="birth" type="date"
+            title="You must be at least 18 years old to make an account."
+            required>
+
+            <label for="term">I agree to the citation stipulations</label>
+            <input id="term" type="checkbox"
+            required>
+
+            <br>
+
+            <label for="notif">Get notified about the latest articles</label>
+            <input id="notif" type="checkbox">
+
+            <input type="submit" value="Submit" class="click">
+            </form>
+
+        </div>
+        
+    </div> 
+    
+</body>
+</html>

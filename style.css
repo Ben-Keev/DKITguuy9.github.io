@@ -227,7 +227,7 @@ footer {
 }
 
 /* Buttons */
-button {
+button, .click {
     /* ---Aesthetic--- */
     background-color: #189AB4;
 
