@@ -226,7 +226,7 @@ footer {
 
 }
 
-/* Buttons */
+/* Buttons, .click is for button shaped tags that aren't buttons */
 button, .click {
     /* ---Aesthetic--- */
     background-color: #189AB4;

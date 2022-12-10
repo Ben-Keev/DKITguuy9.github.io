@@ -16,6 +16,8 @@
     <!-- Google Icons https://www.w3schools.com/icons/google_icons_intro.asp -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <script src="../article-script.js"></script>
+
 </head>
 
 <body>
@@ -48,8 +50,8 @@
                 <!-- Link to citation section within info -->
                 <li><a href="../info.html#citation"><i class="material-icons">school</i>Cite</a></li>
                 <!-- Awaiting Javascript -->
-                <li><a href=""><i class="material-icons">share</i>Share</a></li>
-                <li><a href=""><i class="material-icons">print</i>Print</a></li>
+                <li><a href="" onclick="shareFunction()"><i class="material-icons">share</i>Share</a></li>
+                <li><a href="" onclick="window.print()"><i class="material-icons">print</i>Print</a></li>
             </ul>
         </div>
 
@@ -176,7 +178,7 @@
     <!-- Footer -->
 
     <footer>
-        <button>Return to top</button>
+        <button onclick="topFunction()">Return to top</button>
     </footer>
 
 </body>
