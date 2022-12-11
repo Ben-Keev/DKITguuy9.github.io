@@ -32,6 +32,9 @@
     max-width: 45%;
     min-width: 45%;
 
+    max-height: 600px;
+    min-height: 600px;
+
     /* Horizontal Center */
     margin: auto;
     margin-bottom: 50px;
@@ -115,7 +118,7 @@ textarea {
 .backInfo {
     /* ---Aesthetic--- */
     /* Opacity and colour */
-    background-color: rgba(179, 222, 255);
+    background-color: #D4F1F4;
 
     /* Drop shadow effect */
     box-shadow: -2px 2px 10px 0.25px rgb(90, 90, 90, 0.8);
@@ -125,8 +128,11 @@ textarea {
 
     /* ---Positioning--- */
     /* Limit size */
-    max-width: 80%;
-    min-width: 80%;
+    max-width: 800%;
+    min-width: 100%;
+
+    max-height: 600px;
+    min-height: 600px;
 
     /* Horizontal Center */
     margin: auto;
@@ -134,4 +140,95 @@ textarea {
 
     /* Pad content on all sides */
     padding: 30px;
+}
+
+.backInfoGrid {
+    /* Grid */
+    display: grid;
+
+    /* Horizontally centered */
+    justify-content: center;
+
+    /* Vertically centered */
+    align-content: space-around;
+
+    /* Two columns of equal horizontal size */
+    grid-template-columns: 50% 50%;
+
+    /* Two rows of equal vertical size */
+    grid-template-rows: 50% 50%;
+}
+
+.backInfo > h1, .backInfo > p, .backInfo > hr {
+    color: #189AB4;
+}
+
+.backInfo > hr {
+    height: 1px;
+    background-color: #189AB4;
+    border: none;
+}
+
+/* ---Text Formatting--- */
+
+/* Headings within article text */
+.backInfo h1 {
+    text-align: center;
+    /* Bigger than h1 */
+    font-size: 45px;
+    /* Remove all margins */
+    margin: 0;
+}
+
+/* Paragraphs within article text */
+.backInfo p {
+    text-align: center;
+    /* Bigger text */
+    font-size: large;
+}
+
+.backInfo h2 {
+    /* Has Z-index apply */
+    position: relative;
+    /* Must show on top */
+    z-index: 2;
+
+    background-color: #05445E;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0;
+
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.backInfo ul {
+    /* Show below */
+    z-index: -1;
+
+    background-color: #189AB4;
+    border-radius: 50px;
+    padding: 10px;
+    padding-top: 50px;
+
+    /* Bring the heading downwards */
+    margin-top: -45px;
+    margin-left: 20;
+}
+
+/* Paragraphs within article text */
+.backInfo li {
+    margin-left: 50px;
+
+    font-family: sans-serif;
+    color: white;
+
+    /* Bigger text */
+    font-size: large;
+}
+
+/* The last paragraph doesn't get a margin */
+.backInfo p:last-of-type {
+    margin-bottom: 0;
 }
