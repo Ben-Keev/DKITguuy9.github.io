@@ -7,8 +7,8 @@ function topFunction() {
 
 function shareFunction() {
     // Copy the text inside the text field
-    navigator.clipboard.writeText(window.URL);
+    navigator.clipboard.writeText(document.URL);
 
     // Alert the copied text
-    alert("Copied the text: " + window.URL);
+    alert("Copied the text: " + document.URL);
 }

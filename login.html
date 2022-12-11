@@ -17,16 +17,18 @@
     <!-- Google Icons https://www.w3schools.com/icons/google_icons_intro.asp -->
     <!-- https://fonts.google.com/icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <script src="home-script.js"></script>
+    
+    <!-- defer ensures content is loaded before script is executed -->
+    <script src="firebase.js" defer></script>
     
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="nav posOverride">
         <ul class="posOverride">
-            <img src="assets/l'histoire.png" alt="L'histoire" draggable="false" class="logo">
+            <img src="assets/l'histoire.png" alt="L'histoire" draggable="false" class="logo" onClick="location.href='index.html'">
             <li><a href="index.html" class="currentPage">Home</a></li>
+            <li><a href="login.html">Create an Account</a></li>
             <li><a href="/articles/censorship.html">Articles</a></li>
             <li><a href="info.html">More Info</a></li>
         </ul>
@@ -97,11 +99,17 @@
                 <p>The best decision you ever made.</p>
 
                 <div class="backInfoGrid">
-                    <img src="" alt="">
+                    <img class="signup" src="/assets/signup.png" alt="" draggable="false">
 
-                    <p>Plusmore is the greatest bestest company ever made. Wouldn't you want to have associations with the greatest bestest company ever made? Plusmore is a fighter on the consumer front to create intuitive, good  products for homeowners.
-    
-                    There are a ton of perks available in a plethora of regions! Help us help you by making an account. Start your</p>
+                    <div>
+                    <p>L'histoire is dedicated to preserving video game history like nobody else.
+                        We are constantly unearthing new facts and uncovering the old.</p>
+                        
+                    <p>Never miss an update, make an account with us and unlock special features!
+                        See the benefits table to understand why this service is a necessity!
+                    </p>    
+                    </div>
+                    
     
                     <div class="boxInfo">
                         <h2>Why?</h2>
@@ -114,11 +122,9 @@
                             <li>Non-intrusive emails</li>
                             <li>Unsubscribe anytime</li>
                         </ul>
-
-                        <h2>Join Today!</h2>
                     </div>
     
-                    <img src="/assets/laptopman.png" alt="">
+                    <img class="laptopman" src="/assets/laptopman.png" alt="" draggable="false">
                 </div>
 
 
