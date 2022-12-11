@@ -2,7 +2,7 @@ buttonLeft = document.querySelector("#buttonLeft");
 buttonRight = document.querySelector("#buttonRight");
 
 // Get via id cycleImg, change src
-const contentImg      = ["/assets/black-crt-tv-square-ratio.jpg",    "Item 2"];
+const contentImg      = ["/assets/black-crt-tv-square-ratio.jpg",    "/assets/accountbanner.png"];
 // Get via id cycleLink, change onClick
 const contentLink     = ["articles/censorship.html",    
                         "login.html"];

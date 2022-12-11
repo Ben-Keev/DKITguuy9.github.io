@@ -1,9 +1,9 @@
 function setMaxDate() {
-  //Set maximum date for birthday to 18 years ago today, to ensure user is 18 years old.
+  //Set maximum date for birthday to 13 years ago today, to ensure user is 13 years old.
   var today = new Date();
   var dd = today.getDate();
   var mm = today.getMonth() + 1; //January is 0!
-  var yyyy = today.getFullYear() - 18;
+  var yyyy = today.getFullYear() - 13;
 
   //Format data in congruence with HTML5 max attribute syntax.
   if (dd < 10) {dd = '0' + dd;}
@@ -11,13 +11,12 @@ function setMaxDate() {
   
   //Create string.
   today = yyyy + '-' + mm + '-' + dd;
+  
   //Set max attribute.
-
   document.querySelector('input[type="date"]').setAttribute("max", today);
 }
 
 setMaxDate();
-
 
 function captureUserData() {
   var inputs, index;
@@ -30,15 +29,15 @@ function captureUserData() {
       return;
   }
 
-  //JSON for data collection and firebase submission
+  //JSON for data storage
   let loginData = {};
 
-  //Exclude junk inputs via CSS psuedo-class selector.
-  inputs = document.querySelectorAll('input:not([type="hidden"]):not([type="submit"]), textarea');
+  //Select all inputs, excluding submit button
+  inputs = document.querySelectorAll('input:not([type="submit"]), textarea');
 
   for (index = 0; index < inputs.length; ++index) {
 
-      //Added for readability.
+      //Object's categories are inputs' names
       let loginKey = inputs[index].name;
       let loginValue = inputs[index].value;
 
@@ -58,7 +57,7 @@ function captureUserData() {
 
 const form = document.querySelector("form")
 
-//Listen for a form submission, only on create an account page.
+//Listen for a form submission so we can block its action
 form.addEventListener('submit', e=> {
     console.log("Blocked default submit.");
     e.preventDefault();

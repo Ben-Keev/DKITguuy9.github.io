@@ -17,9 +17,9 @@
     <!-- Google Icons https://www.w3schools.com/icons/google_icons_intro.asp -->
     <!-- https://fonts.google.com/icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+
     <!-- defer ensures content is loaded before script is executed -->
-    <script src="firebase.js" defer></script>
+    <script src="login-script.js" defer></script>
     
 </head>
 <body>
@@ -48,20 +48,20 @@
                 <!-- This action ensures we stay on the same page after hitting submit -->
                 <form action="#">
                     <label for="username">Name</label>
-                    <input id="username" type="text"
+                    <input id="username" type="text" name="Username"
                     placeholder="Enter a username" 
                     pattern="[A-Za-z0-9]{0,8}" 
                     title="Cannot be more than 8 characters long. Cannot contain special characters."
                     required>
 
                     <label for="email">Email</label>
-                    <input id="email" type="email"
+                    <input id="email" type="email" name="Email"
                     placeholder="Enter a valid email address"
                     title="Must be a valid email."
                     required>
 
                     <label for="password">Password</label>
-                    <input id="password" type="password"
+                    <input id="password" type="password" name="Password"
                     placeholder="Enter a strong password"
                     pattern="(?=.*\d).{8,}" 
                     title="Must contain 8 or more characters and at least 1 number"
@@ -69,24 +69,24 @@
 
                     <!-- Verification through JavaScript -->
                     <label for="msg">Leave a comment (Optional)</label>
-                    <textarea name="msg" id="" cols="500" rows="4"
+                    <textarea id="comment" cols="500" rows="4" name="Comment"
                     title="Cannot be more than 100 characters long"></textarea>
 
                     <!-- Verification through JavaScript -->
                     <!-- The 'max' attribute will be created by JavaScript -->
                     <label for="birth">Birthday</label>
-                    <input id="birth" type="date"
+                    <input id="birth" type="date" name="Birthday"
                     title="You must be at least 18 years old to make an account."
                     required>
 
                     <label for="term">I agree to the citation stipulations</label>
-                    <input id="term" type="checkbox"
+                    <input id="term" type="checkbox" name="Terms & Conditions"
                     required>
 
                     <br>
 
                     <label for="notif">Get notified about the latest articles (Optional)</label>
-                    <input id="notif" type="checkbox">
+                    <input id="notif" type="checkbox" name="Notifications">
 
                     <input id="submit" type="submit" value="Submit" class="click">
                 </form>
